@@ -51,7 +51,7 @@
             <%= link_to 'About', about_path %>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <%= link_to 'Alpha-Blog', articles_path %>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -63,13 +63,7 @@
     <!-- /.container -->
   </nav>
 
-  <ul>
-    <% flash.each do |name, msg| %>
-      <li>
-        <%= msg %>
-      </li>
-    <% end %>
-  </ul>
+  <%= render 'layouts/messages' %>
 
   <%= yield %>
 

@@ -63,6 +63,14 @@
     <!-- /.container -->
   </nav>
 
+  <ul>
+    <% flash.each do |name, msg| %>
+      <li>
+        <%= msg %>
+      </li>
+    <% end %>
+  </ul>
+
   <%= yield %>
 
   <!-- jQuery -->

@@ -1,7 +1,7 @@
-<h1>Create a new article</h1>
+<h1>Edit existing article</h1>
 
 <% if @article.errors.any? %>
-<h4>Following errors led to non-creation of new article: </h4>
+<h4>Following errors led to failure of update article: </h4>
   <ul>
     <% @article.errors.full_messages.each do |msg| %>
       <li>
